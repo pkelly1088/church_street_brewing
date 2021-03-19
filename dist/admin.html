@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/admin.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Church Street Brewing Admin Page</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="navbar-toggle" onclick="myFunction()"><img src="images/bars-solid.svg" height="30" alt="Credit: Font Awesome https://fontawesome.com/license"></a>
+            <a href="./index.html"><img src="images/churchStreetLogo-2.webp" height="70" alt="Church Street Brewing Logo" class="logo"></a>
+            <ul class="main-nav" id="add-responsive">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./contact.html" >contact</a></li>
+                <li><a href="./menu.html">menu</a></li>
+                <li><a href="#" class="admin active">admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container" id="login">
+            <div class="row">
+                <div class="columns-6 offset-by-3-columns">
+                    <h2>Admin Login</h2>
+                    <div class="dash"></div>
+                </div>
+            </div>
+            <div class="row">
+                <form class="columns-6 offset-by-3-columns" id="loginForm">
+                    <label for="username">Username</label>
+                    <input type="text" class="username u-full-width" id="usernameInput" aria-describedby="usernameHelp" placeholder="Enter Username">
+                    <label for="password">Password</label>
+                    <input type="password" class="password u-full-width" id="passwordInput" placeholder="Password">
+                    <button class="button-primary btn-login" onclick="event.preventDefault(); login()">Login</button>
+                </form>
+            </div>
+        </section>
+        <section class="container" id="addItem" style="display: none;">
+            <div class="row">
+                <div class="columns-6 offset-by-3-columns">
+                    <h2>Menu Dashboard</h2>
+                    <div class="dash"></div>
+                </div>
+            </div>
+            <div class="row">
+                <form class="columns-6 offset-by-3-columns" id="menuForm">
+                    <label for="item">Item</label>
+                    <input type="text" class="item u-full-width" id="itemInput" aria-describedby="itemHelp" placeholder="Coffee">
+                    <label for="description">Description</label>
+                    <input type="text" class="description u-full-width" id="descriptionInput" aria-describedby="descriptionHelp" placeholder="Hot pour over coffee">
+                    <label for="price">Price</label>
+                    <input type="text" class="price u-full-width" id="priceInput" aria-describedby="priceHelp" placeholder="$3.00">
+                    <button class="button-success" onclick="event.preventDefault(); itemSubmit()">Save</button>
+                </form>
+            </div>
+            <div class="row">
+                <div class="columns-6 offset-by-3-columns">
+                    <button class="button-warning" onclick="event.preventDefault(); logout()">Logout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p class="row">University of Denver ICT 4510 Portfolio Assignment</p>
+    </footer>
+    <script src="./js/navToggle.js"></script>
+    <script src="./js/navScroll.js"></script>
+    <script src="./js/formFunctions.js"></script>
+    <script src="./js/logout.js"></script>
+</body>
+</html>

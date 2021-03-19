@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/menu.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Church Street Brewing Menu</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="navbar-toggle" onclick="myFunction()"><img src="images/bars-solid.svg" height="30" alt="Credit: Font Awesome https://fontawesome.com/license"></a>
+            <a href="./index.html"><img src="images/churchStreetLogo-2.webp" height="70" alt="Church Street Brewing Logo" class="logo"></a>
+            <ul class="main-nav" id="add-responsive">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./contact.html" >contact</a></li>
+                <li><a href="#" class="active">menu</a></li>
+                <li><a href="./admin.html" class="admin">admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="columns-12 menuTitle">
+                        <h2>Menu</h2>
+                        <div class="dash"></div>
+                    </div>
+                </div>
+            </div>
+            <table class="container" id="menuList">
+            </table>
+        </section>
+    </main>
+    <footer class="container">
+        <p class="row">University of Denver ICT 4510 Portfolio Assignment</p>
+    </footer>
+    <script src="./js/navToggle.js"></script>
+    <script src="./js/navScroll.js"></script>
+    <script src="./js/menuList.js"></script>
+</body>
+</html>

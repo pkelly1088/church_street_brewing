@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Church Street Brewing Home Page</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="navbar-toggle" onclick="myFunction()"><img src="images/bars-solid.svg" height="30" alt="Credit: Font Awesome https://fontawesome.com/license"></a>
+            <a href="#"><img src="images/churchStreetLogo-2.webp" height="70" alt="Church Street Brewing Logo" class="logo"></a>
+            <ul class="main-nav" id="add-responsive">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="./contact.html">contact</a></li>
+                <li><a href="./menu.html">menu</a></li>
+                <li><a href="./admin.html" class="admin">admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slideshow-container">
+            <div class="bg"></div>
+            <div class="mySlides fade">
+                <img class="slideImg" src="./images/church-street-cans.jpg" alt="church street coffee cans Credit: church street brewing https://www.churchstbrewing.com/product-page/church-st-mixed-cold-brew-box-8-pack">
+            </div>
+            <div class="mySlides fade">
+                <img class="slideImg" src="./images/church-street-dog.jpeg" alt="church street dog and coffee Credit: https://www.churchstbrewing.com/">
+            </div>
+            <div class="mySlides fade">
+                <img class="slideImg" src="./images/ice-coffee-taps.jpeg" alt="man holding ice coffee from tap Credit: https://www.churchstbrewing.com/">
+            </div>
+        </section>
+        <section class="container about">
+            <div class="row">
+                <div class="columns-12 title">
+                    <h1>Church Street Brewing Co.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="pictureFrame columns-6">
+                    <img src="images/owners-picture.jpg">
+                </div>
+                <div class="columns-6">
+                    <h2>About</h2>
+                    <div class="dash"></div>
+                    <p>We are a small and local nitro coffee pop up that specializes in naturally flavored cold brew. It all began as a side hustle located outside of Boston.  Owners Denis and Amanda started selling nitro cold brew coffee at CrossFit competitions in 2015.  From there, the business grew quickly, they created a large online presence shipping coffee nationwide. They are now opening up their first coffee bar and nano brewery in Canton, Massachusetts.</p>
+                    <h2>Our Vision</h2>
+                    <div class="dash"></div>
+                    <p>Our vision is to provide our community with the highest quality coffee and beer experience possible.  While offering a unique space where people come together.  </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p class="row">University of Denver ICT 4510 Portfolio Assignment</p>
+    </footer> 
+    <script src="./js/navToggle.js"></script>
+    <script src="./js/navScroll.js"></script>
+    <script src="./js/slideShow.js"></script>
+</body>
+</html>

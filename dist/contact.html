@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/contact.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <title>Church Street Brewing Contact Page</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="navbar-toggle" onclick="myFunction()"><img src="images/bars-solid.svg" height="30" alt="Credit: Font Awesome https://fontawesome.com/license"></a>
+            <a href="./index.html"><img src="images/churchStreetLogo-2.webp" height="70" alt="Church Street Brewing Logo" class="logo"></a>
+            <ul class="main-nav" id="add-responsive">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="#" class="active">contact</a></li>
+                <li><a href="./menu.html">menu</a></li>
+                <li><a href="./admin.html" class="admin">admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="mapid"></div>
+        </section>
+        <section class="contactInfo container">
+            <div class="row">
+                <div class="columns-4 address">
+                    <h3>Address</h3>
+                    <div class="dash"></div>
+                    <p>28 Draper Lane</p>
+                    <p>Canton, MA 02021</p>
+                    <p>(Left once you enter Draper and we are on the right before the gate)</p>
+                </div>
+                <div class="columns-4 contact">
+                    <h3>Contact</h3>
+                    <div class="dash"></div>
+                    <p><strong>Phone:</strong> 781-922-9155</p>
+                    <p><strong>Email:</strong> info@churchstbrewing.com</p>
+                </div>
+                <div class="columns-4 hours">
+                    <h3>Hours</h3>
+                    <div class="dash"></div>
+                    <p><strong>Monday:</strong> Closed</p>
+                    <p><strong>Tuesday</strong> Can pick up day: 8am-Noon CURBSIDE ONLY</p>
+                    <p><strong>Wednesday-Sunday:</strong> 8am-Noon</p>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p class="row">University of Denver ICT 4510 Portfolio Assignment</p>
+    </footer>
+    <script src="./js/navToggle.js"></script>
+    <script src="./js/navScroll.js"></script>
+    <script src="./js/locationMap.js"></script>
+</body>
+</html>
