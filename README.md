@@ -13,7 +13,10 @@ Leaflet --
 Mapbox --
 
 Features to Add:
+host on netlify --
 Loading circle for menu page --
 Form validation with Javascript --
 create update feature with fetch request for menu items --
 create delete feture with fetch request for menu items --
+add google analytics --
+add xml site map --
