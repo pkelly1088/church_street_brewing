@@ -14,5 +14,6 @@ Mapbox
 
 Features to Add:
 Loading circle for menu page
+Form validation with Javascript
 create update feature with fetch request for menu items
 create delete feture with fetch request for menu items
